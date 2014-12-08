@@ -25,6 +25,7 @@ public class ApplicationClass extends Application {
 		super.onTerminate();
 	}
 
+	// Начиная с API-14
 	public void onTrimMemory(int level) {
 		Message.show();
 		super.onTrimMemory(level);
