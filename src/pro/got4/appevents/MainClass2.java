@@ -24,7 +24,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager.LayoutParams;
 
-public class MainClass extends FragmentActivity {
+public class MainClass2 extends FragmentActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -32,9 +32,9 @@ public class MainClass extends FragmentActivity {
 		Message.show(this);
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.main_layout);
+		setContentView(R.layout.main2_layout);
 
-		setResult(1);
+		setResult(2);
 	}
 
 	@Override
@@ -443,11 +443,6 @@ public class MainClass extends FragmentActivity {
 	public void onButtonClick(View v) {
 
 		switch (v.getId()) {
-
-		case R.id.startActivityForResultButton:
-
-			startActivityForResult(new Intent(this, MainClass2.class), 1);
-			break;
 
 		case R.id.showDialogFragmentButton:
 
