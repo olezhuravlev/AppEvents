@@ -358,7 +358,7 @@ public class MainClass extends FragmentActivity {
 	@Override
 	public Object onRetainCustomNonConfigurationInstance() {
 		Message.show(this);
-		return super.onRetainNonConfigurationInstance();
+		return super.onRetainCustomNonConfigurationInstance();
 	}
 
 	@Override
