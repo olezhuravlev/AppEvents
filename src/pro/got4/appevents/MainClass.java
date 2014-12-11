@@ -458,6 +458,13 @@ public class MainClass extends FragmentActivity {
 
 			break;
 
+		case R.id.showDialogFragment2Button:
+
+			DialogFragmentClass2 d2 = new DialogFragmentClass2();
+			d2.show(getSupportFragmentManager(), "dialogfragment2_tag");
+
+			break;
+
 		default:
 
 		}

@@ -18,6 +18,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 
+/**
+ * Диалог, для которого setRetainInstance(false).
+ * 
+ * @author programmer
+ * 
+ */
 public class DialogFragmentClass extends DialogFragment {
 
 	@Override
@@ -58,7 +64,10 @@ public class DialogFragmentClass extends DialogFragment {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+
 		Message.show(this);
+
+		setRetainInstance(false);
 		super.onCreate(savedInstanceState);
 	}
 
