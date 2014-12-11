@@ -442,6 +442,8 @@ public class MainClass extends FragmentActivity {
 	// ///////////////////////////////////////////////////
 	public void onButtonClick(View v) {
 
+		Message.show(this);
+
 		switch (v.getId()) {
 
 		case R.id.startActivityForResultButton:

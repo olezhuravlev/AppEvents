@@ -442,7 +442,14 @@ public class MainClass2 extends FragmentActivity {
 	// ///////////////////////////////////////////////////
 	public void onButtonClick(View v) {
 
+		Message.show(this);
+
 		switch (v.getId()) {
+
+		case R.id.startActivityForResultButton:
+
+			startActivityForResult(new Intent(this, MainClass2.class), 1);
+			break;
 
 		case R.id.showDialogFragmentButton:
 
