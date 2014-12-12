@@ -448,10 +448,16 @@ public class MainClass extends FragmentActivity {
 
 		case R.id.startActivityForResultButton:
 
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before startActivityForResult");
+
 			startActivityForResult(new Intent(this, MainClass2.class), 1);
 			break;
 
 		case R.id.showDialogFragmentButton:
+
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before new DialogFragmentClass()");
 
 			DialogFragmentClass d = new DialogFragmentClass();
 			d.show(getSupportFragmentManager(), "dialogfragment_tag");
@@ -459,6 +465,9 @@ public class MainClass extends FragmentActivity {
 			break;
 
 		case R.id.showDialogFragment2Button:
+
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before new DialogFragmentClass2()");
 
 			DialogFragmentClass2 d2 = new DialogFragmentClass2();
 			d2.show(getSupportFragmentManager(), "dialogfragment2_tag");

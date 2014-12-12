@@ -358,7 +358,7 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public Object onRetainCustomNonConfigurationInstance() {
 		Message.show(this);
-		return super.onRetainNonConfigurationInstance();
+		return super.onRetainCustomNonConfigurationInstance();
 	}
 
 	@Override
@@ -448,13 +448,29 @@ public class MainClass2 extends FragmentActivity {
 
 		case R.id.startActivityForResultButton:
 
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before startActivityForResult");
+
 			startActivityForResult(new Intent(this, MainClass2.class), 1);
 			break;
 
 		case R.id.showDialogFragmentButton:
 
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before new DialogFragmentClass()");
+
 			DialogFragmentClass d = new DialogFragmentClass();
 			d.show(getSupportFragmentManager(), "dialogfragment_tag");
+
+			break;
+
+		case R.id.showDialogFragment2Button:
+
+			Message.show("[hashCode = " + this.hashCode()
+					+ "], before new DialogFragmentClass2()");
+
+			DialogFragmentClass2 d2 = new DialogFragmentClass2();
+			d2.show(getSupportFragmentManager(), "dialogfragment2_tag");
 
 			break;
 
