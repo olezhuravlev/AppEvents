@@ -23,6 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onButtonClick"
-        android:text="DialogFragment" />
+        android:text="DialogFragment setRetainInstance(false)" />
+
+    <Button
+        android:id="@+id/showDialogFragment2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="DialogFragment2 setRetainInstance(true)" />
 
 </LinearLayout>
