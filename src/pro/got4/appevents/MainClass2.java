@@ -34,7 +34,7 @@ public class MainClass2 extends FragmentActivity {
 
 		setContentView(R.layout.main2_layout);
 
-		setResult(2);
+		setResult(11);
 	}
 
 	@Override
@@ -62,12 +62,14 @@ public class MainClass2 extends FragmentActivity {
 	public void onApplyThemeResource(Theme theme, int resid, boolean first) {
 		Message.show(this);
 		super.onApplyThemeResource(theme, resid, first);
+		setResult(10);
 	}
 
 	@Override
 	public void onAttachedToWindow() {
 		Message.show(this);
 		super.onAttachedToWindow();
+		setResult(20);
 	}
 
 	@Override
@@ -80,6 +82,7 @@ public class MainClass2 extends FragmentActivity {
 	public void onBackPressed() {
 		Message.show(this);
 		super.onBackPressed();
+		setResult(30);
 	}
 
 	@Override
@@ -98,6 +101,7 @@ public class MainClass2 extends FragmentActivity {
 	public void onContentChanged() {
 		Message.show(this);
 		super.onContentChanged();
+		setResult(14);
 	}
 
 	@Override
@@ -146,18 +150,21 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Message.show(this);
+		setResult(24);
 		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override
 	public boolean onCreatePanelMenu(int featureId, Menu menu) {
 		Message.show(this);
+		setResult(23);
 		return super.onCreatePanelMenu(featureId, menu);
 	}
 
 	@Override
 	public View onCreatePanelView(int featureId) {
 		Message.show(this);
+		setResult(22);
 		return super.onCreatePanelView(featureId);
 	}
 
@@ -170,6 +177,7 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public View onCreateView(String name, Context context, AttributeSet attrs) {
 		Message.show(this);
+		setResult(13);
 		return super.onCreateView(name, context, attrs);
 	}
 
@@ -177,12 +185,14 @@ public class MainClass2 extends FragmentActivity {
 	public void onDestroy() {
 		Message.show(this);
 		super.onDestroy();
+		setResult(33);
 	}
 
 	@Override
 	public void onDetachedFromWindow() {
 		Message.show(this);
 		super.onDetachedFromWindow();
+		setResult(34);
 	}
 
 	@Override
@@ -194,6 +204,7 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		Message.show(this);
+		setResult(28);
 		return super.onKeyDown(keyCode, event);
 	}
 
@@ -218,6 +229,7 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public boolean onKeyUp(int keyCode, KeyEvent event) {
 		Message.show(this);
+		setResult(29);
 		return super.onKeyUp(keyCode, event);
 	}
 
@@ -279,18 +291,21 @@ public class MainClass2 extends FragmentActivity {
 	public void onPause() {
 		Message.show(this);
 		super.onPause();
+		setResult(31);
 	}
 
 	@Override
 	public void onPostCreate(Bundle savedInstanceState) {
 		Message.show(this);
 		super.onPostCreate(savedInstanceState);
+		setResult(16);
 	}
 
 	@Override
 	public void onPostResume() {
 		Message.show(this);
 		super.onPostResume();
+		setResult(19);
 	}
 
 	@Override
@@ -314,12 +329,14 @@ public class MainClass2 extends FragmentActivity {
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		Message.show(this);
+		setResult(26);
 		return super.onPrepareOptionsMenu(menu);
 	}
 
 	@Override
 	public boolean onPreparePanel(int featureId, View view, Menu menu) {
 		Message.show(this);
+		setResult(25);
 		return super.onPreparePanel(featureId, view, menu);
 	}
 
@@ -345,6 +362,7 @@ public class MainClass2 extends FragmentActivity {
 	public void onResume() {
 		Message.show(this);
 		super.onResume();
+		setResult(18);
 	}
 
 	// В FragmentActivity не работает - следует использовать
@@ -377,18 +395,21 @@ public class MainClass2 extends FragmentActivity {
 	public void onStart() {
 		Message.show(this);
 		super.onStart();
+		setResult(15);
 	}
 
 	@Override
 	public void onStop() {
 		Message.show(this);
 		super.onStop();
+		setResult(32);
 	}
 
 	@Override
 	public void onTitleChanged(CharSequence title, int color) {
 		Message.show(this);
 		super.onTitleChanged(title, color);
+		setResult(17);
 	}
 
 	@Override
@@ -413,6 +434,7 @@ public class MainClass2 extends FragmentActivity {
 	public void onUserInteraction() {
 		Message.show(this);
 		super.onUserInteraction();
+		setResult(27);
 	}
 
 	@Override
@@ -425,12 +447,14 @@ public class MainClass2 extends FragmentActivity {
 	public void onWindowAttributesChanged(LayoutParams params) {
 		Message.show(this);
 		super.onWindowAttributesChanged(params);
+		setResult(12);
 	}
 
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		Message.show(this);
 		super.onWindowFocusChanged(hasFocus);
+		setResult(21);
 	}
 
 	@Override

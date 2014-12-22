@@ -220,4 +220,10 @@ public class DialogFragmentClass2 extends DialogFragment {
 		Message.show(this);
 		super.onViewCreated(view, savedInstanceState);
 	}
+
+	@Override
+	public void onViewStateRestored(Bundle savedInstanceState) {
+		Message.show(this);
+		super.onViewStateRestored(savedInstanceState);
+	}
 }

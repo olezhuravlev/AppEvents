@@ -16,6 +16,13 @@ public class Message {
 		System.out.println(ste + " " + comment);
 	}
 
+	static public void show(boolean flag) {
+
+		StackTraceElement[] steArr = Thread.currentThread().getStackTrace();
+		StackTraceElement ste = steArr[3];
+		System.out.println(ste + " [" + flag + "]");
+	}
+
 	static public void show(Object obj) {
 
 		StackTraceElement[] steArr = Thread.currentThread().getStackTrace();
